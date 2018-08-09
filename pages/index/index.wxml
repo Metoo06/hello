@@ -1,0 +1,94 @@
+<view class="banner">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+  </swiper>
+</view>
+<view class="content">
+  <view class="SecKill">
+    <view class="SecKill_title com">商城秒杀活动</view>
+    <scroll-view scroll-x="true">
+      <view class="SecKill_con">
+        <view><image src="../../images/33.png"/></view>
+        <view class="SecKill_name">商品名称123123123123123123123123</view>
+        <view class="SecKill_price">秒杀价：<span>￥233</span></view>
+      </view>
+      <view class="SecKill_con">
+        <view><image src="../../images/33.png"/></view>
+        <view class="SecKill_name">商品名称123123123123123123123123</view>
+        <view class="SecKill_price">秒杀价：<span>￥233</span></view>
+      </view>
+      <view class="SecKill_con">
+        <view><image src="../../images/33.png"/></view>
+        <view class="SecKill_name">商品名称123123123123123123123123</view>
+        <view class="SecKill_price">秒杀价：<span>￥233</span></view>
+      </view>
+      <view class="SecKill_con">
+        <view><image src="../../images/33.png"/></view>
+        <view class="SecKill_name">商品名称123123123123123123123123</view>
+        <view class="SecKill_price">秒杀价：<span>￥233</span></view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="coupon">
+    <view class="com">优惠券</view>
+    <view class="coupon_con">
+    <scroll-view scroll-x="true">
+      <view class="coupon_item">
+        <view class="coupon_item_c">￥ 88元</view>
+        <view class="coupon_item_m">新店优惠</view>
+        <view class="coupon_item_m">满300元使用</view>
+        <view class="coupon_item_m">领取15天内有效</view>
+      </view>
+      <view class="coupon_item">
+        <view class="coupon_item_c">￥ 88元</view>
+        <view class="coupon_item_m">新店优惠</view>
+        <view class="coupon_item_m">满300元使用</view>
+        <view class="coupon_item_m">领取15天内有效</view>
+      </view>
+      <view class="coupon_item">
+        <view class="coupon_item_c">￥ 88元</view>
+        <view class="coupon_item_m">新店优惠</view>
+        <view class="coupon_item_m">满300元使用</view>
+        <view class="coupon_item_m">领取15天内有效</view>
+      </view>
+      <view class="coupon_item">
+        <view class="coupon_item_c">￥ 88元</view>
+        <view class="coupon_item_m">新店优惠</view>
+        <view class="coupon_item_m">满300元使用</view>
+        <view class="coupon_item_m">领取15天内有效</view>
+      </view>
+      <view class="coupon_item">
+        <view class="coupon_item_c">￥ 88元</view>
+        <view class="coupon_item_m">新店优惠</view>
+        <view class="coupon_item_m">满300元使用</view>
+        <view class="coupon_item_m">领取15天内有效</view>
+      </view>
+    </scroll-view>
+    </view>
+  </view>
+  <view class="goods">
+    <view class="goods_title com">推荐商品</view>
+    <view class="goods_con">
+      <view class="goods-box">
+        <view><image src="../../images/33.png"/></view>
+        <view class="goods_name">商品名称</view>
+        <view class="goods_price">￥88</view>
+      </view>
+      <view class="goods-box">
+        <view><image src="../../images/33.png"/></view>
+        <view class="goods_name">商品名称</view>
+        <view class="goods_price">￥88</view>
+      </view>
+      <view class="goods-box">
+        <view><image src="../../images/33.png"/></view>
+        <view class="goods_name">商品名称</view>
+        <view class="goods_price">￥88</view>
+      </view>
+    </view>
+  </view>
+</view>

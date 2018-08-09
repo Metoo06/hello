@@ -1,0 +1,30 @@
+<view class="container">
+    <view class="address-list">
+        <view class="a-address">
+             <view class="left-text active" bindtap="selectTap" data-id="1">
+                 <view class="name-tel">
+                    关羽  13813813828
+                 </view>
+                 <view class="address-box">
+                    蜀国 蜀国 蜀国 蜀国 蜀国
+                 </view>     
+             </view>   
+             <view class="right-edit" bindtap="editAddess" data-id="1"></view> 
+        </view>
+        <view class="a-address">
+             <view class="left-text" bindtap="selectTap" data-id="2">
+                 <view class="name-tel">
+                    123  1111111111
+                 </view>
+                 <view class="address-box">
+                    2222
+                 </view>     
+             </view>   
+             <view class="right-edit" bindtap="editAddess" data-id="2"></view> 
+        </view>
+    </view>
+    <view class="bottom-box">
+        <view class="add-btn" bindtap="addAddess">新增收货地址</view>
+    </view>
+
+</view>

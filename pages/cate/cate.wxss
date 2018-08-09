@@ -1,0 +1,45 @@
+.tab-h {
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #f7f7f7;
+  font-size: 14px;
+  white-space: nowrap;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99; */
+}
+
+.tab-item {
+  margin: 0 36rpx;
+  display: inline-block;
+}
+
+.tab-item.active {
+  color: #e64340;
+  position: relative;
+}
+
+.tab-h .tab-item.active:after {
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 115rpx;
+  background: #e64340;
+  position: absolute;
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+}
+
+.tab-h .tab-item:nth-child(1).active:after {
+  width: 52rpx;
+}
+.tab-content{display: block;}
+/*商品  */
+.cate_gor{width:48%;float:left;margin: 0 1%;text-align: center;}
+.cate_gor image{width: 100%;height:150rpx;}
+.cate_gor text{font-size: 20rpx;}

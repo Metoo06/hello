@@ -1,0 +1,51 @@
+<view class="head">
+  <view class="head_time">
+    <view>等待买付款</view>
+    <text>剩23时59分59秒自动关闭</text>
+  </view>
+  <view class="head_img">
+    <!-- <image src="../../images/order-details/icon-ddfh.png"/> -->
+    <image src="../../images/order-details/icon-ddfk_1.png"/>
+    <!-- <image src="../../images/order-details/icon-ddsh.png"/>
+    <image src="../../images/order-details/icon-jycg.png"/>
+    <image src="../../images/order-details/icon-wuliu.png"/> -->
+  </view>
+</view>
+<view class="address">
+  <view class="address_img">
+    <image src="../../images/order-details/icon-address.png" />
+  </view>
+  <view class="address_info">
+    <view>收货人：xxx <text>13078285520</text></view>
+    <view>收货地址：广东省广州市番禺区阿法地方安放阿顺帆撒发生发生大幅撒旦法等</view>
+  </view>
+</view>
+<view class="bg"></view>
+<view class="goods_box">商品信息</view>
+<view class="goods">
+  <view class="goods_img">
+    <image src="../../images/33.png" />
+  </view>
+  <view class="goods_info">
+    <view class="goods_name">商品名称</view>
+    <view class="goods_spec">商品规格</view>
+    <view class="goods_mony">￥77.77</view>
+  </view>
+</view>
+<view class="order_info">
+  <view class="order_ma">商品总价 <text>￥77.00</text></view>
+  <view class="order_ma">运费（快递） <text>￥0.00</text></view>
+  <view class="total">订单总价 <text>￥77.00</text></view>
+  <view class="pay">需付款 <text>￥77.00</text></view>
+</view>
+<view class="button"><button bindtap="pay_click">付款</button></view>
+<!--弹出支付  -->
+<view class="pay_shadow" wx:if="{{showModalStatus}}" bindtap="colse_pay"></view>
+<view class="pay_content" wx:if="{{showModalStatus}}">
+  <view class="pay_title">确认支付</view>
+  <view class="pay_con">
+    <view class="pay_mony">￥77.00</view>
+    <view class="explain">说明：本商城暂时实行积分与金额（一比一价值）</view>
+  </view>
+  <button bindtap="pay_success">付款</button>
+</view>

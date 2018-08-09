@@ -1,0 +1,48 @@
+<!-- tab header -->
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+      <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">全部</view>
+      <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">营销系统</view>
+      <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">家居建材</view>
+      <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">美妆护肤</view>
+      <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">数码电器</view>
+      <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">母婴玩具</view>
+      <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">零元购活动</view>
+    </scroll-view>
+    <!--内容主体-->  
+  <view>
+  <swiper class="" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+  <view>全部tab1</view>  
+    <swiper-item>  
+      <view class="cate_gor">
+        <navigator url="../product/product">
+          <image src="../../images/33.png" />
+          <text>商品名称</text>
+        </navigator>
+      </view>  
+      <view class="cate_gor">
+        <navigator url="../product/product">
+          <image src="../../images/44.png" />
+          <text>商品名称</text>
+        </navigator>
+      </view>  
+    </swiper-item>  
+    <swiper-item>  
+      <view>营销系统tab2</view>  
+    </swiper-item>  
+    <swiper-item>  
+      <view>家居建材tab3</view>  
+    </swiper-item> 
+    <swiper-item>  
+      <view>美妆护肤</view>  
+    </swiper-item>
+    <swiper-item>  
+      <view>数码电器</view>  
+    </swiper-item>
+    <swiper-item>  
+      <view>母婴玩具</view>  
+    </swiper-item>
+    <swiper-item>  
+      <view>零元购活动</view>  
+    </swiper-item> 
+  </swiper>  
+</view> 

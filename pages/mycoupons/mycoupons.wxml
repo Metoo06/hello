@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="coupons-list">
+      <view class="coupons-item">
+        <view style="font-size: 50rpx"> ￥ 12元 </view>
+        <view> 优惠券名 </view>
+        <view> 满 300 元使用 </view>
+        <view> 2018年12月1日 前有效 </view>
+      </view>
+    </view>
+    <view style="height:100rpx;background-color:#fff;width:100%;"></view>
+    <view class="bottom-box">
+        <view class="add-btn" bindtap="goBuy">立即前往下单</view>
+    </view>
+
+</view>

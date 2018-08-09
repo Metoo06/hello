@@ -1,0 +1,76 @@
+
+<!--商品介绍图  -->
+<view class="goods_img">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+  </swiper>
+</view>
+<view class="goods_title">商品标题</view>
+<view class="goods_con">
+  <view><span class="money">￥:77.77</span><span class="stock">库存：100</span></view>
+  <view>商家：懒人无限公司</view>
+  <view>支付：微信支付</view>
+</view>
+<view class="goods_details">
+  <view class="goods_nav">
+    <view class="{{goods_nav_v == 0 ? 'show' : ''}}" data-current="0" bindtap="goods_click">图文详情</view>
+    <view class="{{goods_nav_v == 1 ? 'show' : ''}}" data-current="1" bindtap="goods_click">产品规格</view>
+  </view>
+  <view class="goods_details_con">
+  <swiper current="{{goods_nav_v}}" bindchange="bindChange">
+    <swiper-item>
+    12312
+    </swiper-item>
+    <swiper-item>
+    <view class="goods_details_size">
+      <view><span>商品名称：</span><span>啦啦啦</span></view>
+      <view><span>商品编号：</span><span>啦啦啦</span></view>
+      <view><span>分<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </text>类：</span><span>啦啦啦</span></view>
+      <view><span>售<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </text>后：</span><span>啦啦啦</span></view>
+    </view>
+    </swiper-item>
+  </swiper>
+  </view>
+</view>
+<view class="footer">
+  <view class="footer_l footer_w">
+   <image src="../../images/kefu.png"/>
+   <view>客服</view>
+  </view>
+  <view class="footer_l footer_w"  bindtap="addFavorites">
+   <image src="{{isCollect == 1 ? '../../images/shced.png':'../../images/shc.png'}}"/>
+   <view>收藏</view>
+  </view>
+  <view class="footer_l footer_h bg_1">
+   <view bindtap="addShopCart">加入购物车</view>
+  </view>
+  <view class="footer_l footer_h bg_2">
+   <view bindtap="setModalStatus" data-status="1">立刻购买</view>
+  </view>
+</view>
+<!--弹窗-->
+<view class="drawer_screen" bindtap="setModalStatus" data-status="0" wx:if="{{showModalStatus}}"></view>
+<view animation="{{animationData}}" class="drawer_attr_box" wx:if="{{showModalStatus}}">
+<view class="close"><text bindtap="setModalStatus" data-status="0">x</text></view>
+<view class="drawer_l">
+  <image src="../../images/kefu.png" />
+</view>
+<view class="drawer_r">
+  <view class="drawer_r_h">商品标题</view>
+  <view class="drawer_r_money">￥77.77</view>
+  <view class="drawer_r_stock">库存：100</view>
+</view>
+<view class='cl'></view>
+<view class="drawer_r_num">
+<text class="drawer_r_num_c">购买数量：</text>
+<span class="nominus num_com" bindtap="changeNum" data-buynum="0">-</span>
+<span class="nownum">{{buynum}}</span>
+<span class="normal num_com" bindtap="changeNum" data-buynum="1">+</span>
+</view>
+<view class='footc' bindtap="addShopCart">立刻购买</view>
+</view>

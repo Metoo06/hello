@@ -1,0 +1,43 @@
+
+.goods_img{margin:0 auto;width:100%;}
+.goods_img image{width:100%;} 
+.goods_title{text-align: center;font-size:32rpx;font-weight:bold;}
+.goods_con{font-size:25rpx;padding:0 2%;}
+.goods_con .money{color:red;font-size: 28rpx;}
+.goods_con .stock{float:right;color:#ccc;}
+.goods_details .goods_nav{width:100%;margin-top: 20rpx;}
+.goods_details .goods_nav view{width:50%;display:inline-block;text-align: center;font-size: 30rpx;line-height: 70rpx;border-bottom: 4rpx solid #eee;}
+.goods_details .goods_nav .show{border-bottom:4rpx solid red;color:red;}
+.footer{position:fixed;bottom:0;left:0;width:100%;border-top:5rpx solid #eee;height: 100rpx;}
+.footer .footer_l{float:left;text-align: center;}
+.footer .footer_w{width:20%;color: #333;font-size:25rpx;margin-top: 10rpx;}
+.footer .footer_w image{width:40rpx;height: 40rpx;}
+.footer .footer_h{width:30%;line-height: 90rpx;color:#fff;}
+.footer .bg_1{background-color: rgb(252,213,0);}
+.footer .bg_2{background-color: red;}
+/*弹窗*/
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+.drawer_attr_box{z-index: 1001;position:relative;width: 100%;background-color: #fff;}
+.drawer_attr_box .close text{float:right;color:#ccc;margin-right: 15rpx;}
+.drawer_l{float: left;width:30%;margin-top:50rpx;text-align: center;}
+.drawer_l image{width:180rpx;height: 180rpx;}
+.drawer_r{float: left;width:70%;margin-top:50rpx;}
+.drawer_r .drawer_r_h{font-size:32rpx;}
+.drawer_r .drawer_r_money{font-size:30rpx;color:red;}
+.drawer_r .drawer_r_stock{font-size:25rpx;color:#333;}
+.cl{clear:both;}
+.drawer_r_num .drawer_r_num_c{color:#000;font-size: 38rpx;margin:0 10% 0 10%;}
+.drawer_r_num .num_com{padding:2rpx 2rpx;border:2rpx solid #333;border-radius: 50%;text-align: center;color:#333;font-size: 50rpx;margin: 0 12rpx;}
+.drawer_r_num .nownum{font-size: 50rpx;}
+.drawer_attr_box .footc{width: 100%;color:#fff;background: red;font-weight: bold;height: 80rpx;line-height: 80rpx;text-align: center;margin-top: 15rpx;}

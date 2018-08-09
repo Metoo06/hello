@@ -1,0 +1,47 @@
+<view>
+  <scroll-view scroll-x="true" class="nav" scroll-left="{{scrollLeft}}">
+    <view class="nav_com {{currentTab == 0 ? 'show':''}}" bindtap="nav_click" data-nav="0">待付款</view>
+    <view class="nav_com {{currentTab == 1 ? 'show':''}}" bindtap="nav_click" data-nav="1">待发货</view>
+    <view class="nav_com {{currentTab == 2 ? 'show':''}}" bindtap="nav_click" data-nav="2">待收货</view>
+    <view class="nav_com {{currentTab == 3 ? 'show':''}}" bindtap="nav_click" data-nav="3">待评价</view>
+    <view class="nav_com {{currentTab == 4 ? 'show':''}}" bindtap="nav_click" data-nav="4">已完成</view>
+  </scroll-view>
+</view>
+<swiper class="content" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+  <swiper-item>
+    <view class="order_no">
+      <view><image src="../../images/search_no.png"/></view>
+      <text>亲，没有订单哦/(ㄒoㄒ)/~~</text>
+    </view>
+    <view class="order_show">
+      <view class="goods_img"><image src="../../images/search_no.png" /></view>
+      <view class="goods_info">
+         <view class="goods_name">商品名称123qweqw要eqweq12343223hhh222</view>
+         <view class="goods_des">单价：¥ 72.00　 数量：×1 　产品：×1</view>
+         <view class="money">￥：72.00</view>
+         <view class="order_bottom"><navigator url="./order_details" class="order_1">订单详情</navigator><view class="order_1" bindtap="removeOrder" data-ordersn="123456">取消订单</view><view class="order_1">支付</view></view>
+      </view>
+    </view>
+    <view class="order_show">
+      <view class="goods_img"><image src="../../images/search_no.png" /></view>
+      <view class="goods_info">
+         <view class="goods_name">1商品2名3称123qweqw要eqweq12343223hhh222</view>
+         <view class="goods_des">单价：¥ 72.00　 数量：×1 　产品：×1</view>
+         <view class="money">￥：72.00</view>
+         <view class="order_bottom"><navigator url="./order_details" class="order_1">订单详情</navigator><view class="order_1" bindtap="removeOrder" data-ordersn="1234565">取消订单</view><view class="order_1">支付</view></view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <text>2</text>
+  </swiper-item>
+  <swiper-item>
+    <text>2</text>
+  </swiper-item>
+  <swiper-item>
+    <text>2</text>
+  </swiper-item>
+   <swiper-item>
+    <text>2</text>
+  </swiper-item>
+</swiper>

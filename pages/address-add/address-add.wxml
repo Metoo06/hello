@@ -1,0 +1,43 @@
+<view class="bg"></view>
+<view class="content">
+  <form>
+    <view class="form_box">
+      <view class="form_box_wex">
+        <view class="label">联系人</view>
+        <view class="label_right"><input type="text" placeholder='姓名' name="name" /></view>
+      </view>
+      <view class="form_box_wex">
+        <view class="label">手机号码</view>
+        <view class="label_right"><input type="text" placeholder='11位手机号码' name="name" /></view>
+      </view>
+      <view class="form_box_wex">
+        <view class="label">选择地区</view>
+            <picker bindchange="bindPickerChange" range="{{provinces}}">
+              <view class="picker {{selProvince=='请选择'?'hui':''}}">
+                {{selProvince}}
+              </view>
+            </picker>
+            <picker bindchange="bindCitysChange" range="{{citys}}">
+              <view class="picker {{selCity=='请选择'?'hui':''}}">
+                {{selCity}}
+              </view>
+            </picker>
+            <picker bindchange="bindDistrictsChange" range="{{districts}}">
+              <view class="picker {{selDistrict=='请选择'?'hui':''}}">
+                {{selDistrict}}
+              </view>
+            </picker>
+      </view>
+      <view class="form_box_wex">
+        <view class="label">详细地址</view>
+        <view class="label_right"><input type="text" placeholder='街道门牌信息' name="name" /></view>
+      </view>
+      <view class="form_box_wex">
+        <view class="label">邮政编号</view>
+        <view class="label_right"><input type="text" placeholder='' name="name" /></view>
+      </view>
+      <button type="submit" class="form_submit">保存</button>
+      <button type="default">取消</button>
+    </view>
+  </form>
+</view>
